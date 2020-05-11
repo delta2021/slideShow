@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <script src="scripts/move.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="display-images">
+        <ul id="image-holder">
+            <div class="btn prev"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> </div>
+            <div class="btn next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> </div>
+            <div class="text">草地</div>
+            <div class="length">1/6</div>
+            <a href="javascript:;" class="mark-left"></a>
+            <a href="javascript:;" class="mark-right"></a>
+            <!-- <div class="bg"></div> -->
+            <li><img src="images/1-300x300.jpg" style="z-index: 1;"/></li>
+            <li><img src="images/2-300x300.jpg"/></li>
+            <li><img src="images/3-300x300.jpg"/></li>
+            <li><img src="images/4-300x300.jpg"/></li>
+            <li><img src="images/5-300x300.jpg"/></li>
+            <li><img src="images/6-300x300.jpg"/></li>  
+        </ul>
+        <div id="thumbnail-holder">
+        <ul id="image-thumbnail-g1" style="z-index: 1;">
+            <li><img src="images/1-300x300.jpg"/></li>
+            <li><img src="images/2-300x300.jpg"/></li>
+            <li><img src="images/3-300x300.jpg"/></li>
+        </ul>
+
+        <ul id="image-thumbnail-g2" >
+            <li><img src="images/4-300x300.jpg"/></li>
+            <li><img src="images/5-300x300.jpg"/></li>
+            <li><img src="images/6-300x300.jpg"/></li>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

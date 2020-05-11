@@ -1,0 +1,140 @@
+
+:root {
+    --bg-color: #74b9ff;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+#display-images {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: #fff;
+  
+}
+
+#image-holder {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+.btn {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    color: #666;
+   
+}
+
+.btn.prev {
+    left: -18px
+}
+
+.btn.next{
+    right: -18px;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    z-index: 10000;
+}
+
+.length {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    z-index: 10000;
+}
+
+.mark-left, .mark-right {
+    display: block;
+    width: 168px;
+    height: 300px;
+    position: absolute; 
+    z-index: 10000; 
+ 
+}
+
+.mark-left {
+   
+    left:-18px;
+    border-left: solid 18px var(--bg-color);
+}
+
+.mark-left:hover, .mark-right:hover {
+    opacity: 0;
+}
+
+.mark-right {
+    right: -18px;
+    border-right: solid 18px var(--bg-color);
+}
+
+
+#image-holder img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+}
+
+#thumbnail-holder {
+    position: relative;
+}
+
+#image-thumbnail-g1, #image-thumbnail-g2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    background-color: #0984c3;
+
+}
+
+#image-thumbnail-g1 li, #image-thumbnail-g2 li {
+    width: 80px;
+    height: 80px;
+}
+
+#image-thumbnail-g1 img, #image-thumbnail-g2 img{
+    width: 80px;
+    height: 80px;
+    opacity: 0.7;
+    
+ 
+}
+
+/* #image-thumbnail-g1 img:hover, #image-thumbnail-g2 img:hover{
+
+    opacity: 1;
+ 
+} */
+
+.show {
+    z-index: 10;
+}
